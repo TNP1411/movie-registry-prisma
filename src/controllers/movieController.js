@@ -27,9 +27,9 @@ export const create = async (req, res) => {
         const { title, description, duration, genre, rating, Rating, available, avaiable } =
             req.body;
 
-if (isNaN(duration) || duration <= 0) {
+if (isNaN(duration) || duration <= 0 || duration > 300) {
     return res.status(400).json({
-        error: 'A duração deve ser um número inteiro positivo (maior que zero).',
+        error: 'A duração deve ser um número inteiro positivo e não pode exceder 300 minutos.',
     });
 }
 
