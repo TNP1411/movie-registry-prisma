@@ -1,52 +1,53 @@
-### 1. Initialize the Project
-- `npm init -y`
+# 🎬 Movie Management API
 
-### 2. Configure `package.json`
-- Add: `"type": "module"`
-- Add: `"main": "server.js"`
-- Add to scripts: `"dev": "nodemon server.js"`
+A robust RESTful API built with **Node.js**, **Express**, and **Prisma ORM** for managing movie catalogs. This project implements strict business rules, data validation, and advanced filtering capabilities.
 
-### 3. Install Dependencies
-- **Production:** `npm i express dotenv pg @prisma/client @prisma/adapter-pg`
-- **Development:** `npm i -D nodemon prisma`
+## Features
 
-### 4. Initialize Prisma
-- `npx prisma init --datasource-provider postgresql`
-
-### 5. Configure `.env`
-- Set your connection string:
-  `DATABASE_URL="postgresql://user:password@localhost:port/database_name"`
-
-### 6. Configure `schema.prisma`
-- Define your models and tables.
-
-### 7. Generate Migrations and Client
-- `npx prisma migrate dev --name init`
-- `npx prisma generate`
-
-### 8. Seed the Database
-- `npx prisma db seed`
-
-### 9. Launch Prisma Studio
-- `npx prisma studio`
+- **Full CRUD**: Create, Read, Update, and Delete movies.
+- **Advanced Filtering**: Search by title, genre, rating, duration, and availability.
+- **Strict Validations**: Ensures data integrity through custom business logic.
+- **Database Integration**: Powered by Prisma ORM for seamless PostgreSQL/MySQL communication.
 
 ---
 
-## 🛠️ Troubleshooting & Common Scenarios
+## 🛠️ Technical Stack
 
-### After updating `schema.prisma`
-- Run a new migration: `npx prisma migrate dev --name describe_your_change` (e.g., `add_user_table`)
+* **Runtime:** Node.js
+* **Framework:** Express.js
+* **ORM:** Prisma
+* **Database:** PostgreSQL (or your preferred SQL DB)
+* **Validation:** Custom Middleware & Controller Logic
 
-### Inconsistent Database (⚠️ WARNING: Deletes all data)
-- Reset the database state: `npx prisma migrate reset`
+---
 
-### Populating Data Only
-- Run the seed script: `npx prisma db seed`
+## 📋 Business Rules & Constraints
 
-### Quick Reference Table
+To ensure high-quality data, the API enforces the following rules:
 
-| Command | Deletes Data? | Creates Migrations? | Primary Use Case |
-| :--- | :---: | :---: | :--- |
-| `migrate dev` | No* | **Yes** | Schema changes |
-| `db seed` | No | No | Populating initial data |
-| `migrate reset` | **Yes** | No | Fix corruption (Dev only) |
+| Field | Constraint |
+| :--- | :--- |
+| **Title** | Required, minimum 3 characters, and must be **unique**. |
+| **Duration** | Must be a **positive integer** and cannot exceed **300 minutes**. |
+| **Genre** | Must be one of: *Action, Drama, Comedy, Horror, Romance, Animation, Sci-Fi, Thriller*. |
+| **Rating** | Must be a decimal number between **0 and 10**. |
+| **Description** | (Optional) Recommended minimum of 10 characters. |
+
+---
+
+## 🔍 API Endpoints & Filtering
+
+### 1. Get All Movies (with Filters)
+`GET /movies`
+
+You can combine multiple query parameters to refine your search:
+
+* `title`: Case-insensitive partial search (e.g., `?title=soul`).
+* `genre`: Filter by category (e.g., `?genre=Drama`).
+* `minRating`: Minimum rating threshold (e.g., `?minRating=8.5`).
+* `maxDuration`: Maximum length in minutes (e.g., `?maxDuration=120`).
+* `available`: Filter by availability status (`?available=true` or `false`).
+
+**Example Request:**
+```http
+GET /movies?title=interstellar&minRating=9&available=true
