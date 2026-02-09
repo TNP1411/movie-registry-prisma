@@ -27,6 +27,23 @@ export const create = async (req, res) => {
         const { title, description, duration, genre, rating, Rating, available, avaiable } =
             req.body;
 
+        const generosPermitidos = [
+            'Ação',
+            'Drama',
+            'Comédia',
+            'Terror',
+            'Romance',
+            'Animação',
+            'Ficção Científica',
+            'Suspense',
+        ];
+
+        if (!generosPermitidos.includes(genre)) {
+            return res.status(400).json({
+                error: `Gênero inválido. Precisa ser um destes gêneros: ${generosPermitidos.join(', ')}`,
+            });
+        }
+
 if (isNaN(duration) || duration <= 0 || duration > 300) {
     return res.status(400).json({
         error: 'A duração deve ser um número inteiro positivo e não pode exceder 300 minutos.',
