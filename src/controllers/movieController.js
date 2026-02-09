@@ -50,11 +50,11 @@ export const create = async (req, res) => {
             });
         }
 
-if (isNaN(duration) || duration <= 0 || duration > 300) {
-    return res.status(400).json({
-        error: 'A duração deve ser um número inteiro positivo e não pode exceder 300 minutos.',
-    });
-}
+        if (isNaN(duration) || duration <= 0 || duration > 300) {
+            return res.status(400).json({
+                error: 'A duração deve ser um número inteiro positivo e não pode exceder 300 minutos.',
+            });
+        }
 
         if (title.trim().length < 3) {
             return res.status(400).json({
@@ -71,11 +71,11 @@ if (isNaN(duration) || duration <= 0 || duration > 300) {
         }
 
 
-                if (description.trim().length < 10) {
-                    return res.status(400).json({
-                        error: 'A descrição é obrigatória e deve conter no mínimo 10 caracteres.',
-                    });
-                }
+        if (description.trim().length < 10) {
+            return res.status(400).json({
+                error: 'A descrição é obrigatória e deve conter no mínimo 10 caracteres.',
+            });
+        }
 
         if (!title) return res.status(400).json({ error: 'O title é obrigatório!' });
         if (!duration) return res.status(400).json({ error: 'O duration é obrigatório!' });
