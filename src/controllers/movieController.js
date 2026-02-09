@@ -27,6 +27,12 @@ export const create = async (req, res) => {
         const { title, description, duration, genre, rating, Rating, available, avaiable } =
             req.body;
 
+if (isNaN(duration) || duration <= 0) {
+    return res.status(400).json({
+        error: 'A duração deve ser um número inteiro positivo (maior que zero).',
+    });
+}
+
         if (title.trim().length < 3) {
             return res.status(400).json({
                 error: 'O título é obrigatório e deve conter no mínimo 3 caracteres.',
