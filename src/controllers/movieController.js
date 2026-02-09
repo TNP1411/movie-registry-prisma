@@ -62,6 +62,14 @@ if (isNaN(duration) || duration <= 0 || duration > 300) {
             });
         }
 
+        const movieExists = await model.findAll({ title });
+
+        if (movieExists && movieExists.length > 0) {
+            return res
+                .status(409)
+                .json({ error: 'Já existe um filme cadastrado com este título.' });
+        }
+
 
                 if (description.trim().length < 10) {
                     return res.status(400).json({
