@@ -5,11 +5,14 @@ export const create = async (data) => {
 };
 
 export const findAll = async (filters = {}) => {
-    const { title, description, duration, genre, rating, available } =
+    const { title, description, duration, genre, rating, available, minRating } =
         filters;
     const where = {};
 
-
+if (minRating !== undefined) {
+    where.rating = {
+        gte: parseFloat(minRating), };
+}
     if (title) where.title = { contains: title, mode: 'insensitive' };
     if (description) where.description = { contains: description, mode: 'insensitive' };
     if (genre) where.genre = { contains: genre, mode: 'insensitive' };
