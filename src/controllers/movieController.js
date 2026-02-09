@@ -33,6 +33,13 @@ export const create = async (req, res) => {
             });
         }
 
+
+                if (description.trim().length < 10) {
+                    return res.status(400).json({
+                        error: 'A descrição é obrigatória e deve conter no mínimo 10 caracteres.',
+                    });
+                }
+
         if (!title) return res.status(400).json({ error: 'O title é obrigatório!' });
         if (!duration) return res.status(400).json({ error: 'O duration é obrigatório!' });
         if (!genre) return res.status(400).json({ error: 'O genre é obrigatório!' });
