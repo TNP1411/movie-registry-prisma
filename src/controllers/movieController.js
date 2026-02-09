@@ -38,6 +38,12 @@ export const create = async (req, res) => {
             'Suspense',
         ];
 
+        if (rating < 0 || rating > 10) {
+            return res.status(400).json({
+                error: 'O rating deve ser um número entre 0 e 10.',
+            });
+        }
+
         if (!generosPermitidos.includes(genre)) {
             return res.status(400).json({
                 error: `Gênero inválido. Precisa ser um destes gêneros: ${generosPermitidos.join(', ')}`,
